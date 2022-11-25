@@ -1398,18 +1398,6 @@ h6 {
   }
 }
 
-@supports (min-height: clamp( 17.125rem , 19.2678571429rem  +  -5.7142857143vw , 18.125rem )) {
-  .image-big {
-    min-height: clamp( 17.125rem , 19.2678571429rem  +  -5.7142857143vw , 18.125rem );
-  }
-}
-
-@supports not (min-height: clamp( 17.125rem , 19.2678571429rem  +  -5.7142857143vw , 18.125rem )) {
-  .image-big {
-    min-height: calc(18.125rem + -1 * (100vw - 20rem) / 17.5);
-  }
-}
-
 .slide-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1986,6 +1974,11 @@ h6 {
 
   .gallery__slider {
     display: none;
+  }
+
+  .gallery__image {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .gallery__image:last-child {
