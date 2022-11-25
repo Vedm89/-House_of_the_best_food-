@@ -1410,7 +1410,7 @@ h6 {
   }
 }
 
-.slide-gallery__item {
+.slide-gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1421,6 +1421,16 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.slide-gallery__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.875rem;
 }
 
